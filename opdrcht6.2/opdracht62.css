@@ -1,0 +1,30 @@
+container {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    margin-top: 40px;
+}
+
+box{
+    width: 80px;
+    height:80px;
+    border-radius:10px;
+}
+
+blue{
+    background-color:blue;
+}
+
+black{
+    background-color:black;
+}
+
+red{
+    background-color:red;
+}
+
+green{
+    background-color:green;
+}
+

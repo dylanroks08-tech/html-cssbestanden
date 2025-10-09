@@ -1,0 +1,41 @@
+body
+{
+background-color: rgb(69, 236, 19);
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+flex-direction: column;
+}
+
+img{
+    width: 300px;
+}
+
+img:hover{
+scale: 110%;
+transition: ease-in-out 200ms;
+filter: drop-shadow(2px 2px 10px black);
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    background-color: rgb(145, 145, 145);
+    padding: 100px;
+    border-radius: 200px;
+}
+
+a{
+    text-decoration: rgb(0, 0, 0);
+    color: rgb(50, 24, 24);
+    color: rgb(0, 0, 0);
+    font-size:100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
