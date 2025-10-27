@@ -36,3 +36,8 @@ main {
 footer {
     background-color: greenyellow;
 }
+
+logo{
+    width: 50px;
+    height: auto;
+}
