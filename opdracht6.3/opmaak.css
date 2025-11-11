@@ -48,3 +48,9 @@ table, th, td {
     padding: 10px;
     text-align: left;
 }
+#tr10{
+    background-color: red;
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
