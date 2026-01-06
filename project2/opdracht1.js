@@ -13,3 +13,14 @@ function checkage() {
         document.getElementById('redpage').style.display = 'block';
     }
 }
+
+function showLogin() {
+    let text;
+    let person = prompt("Please enter your name:", "");
+    let pass = prompt("Please enter your password:", "");
+
+    if (person == null || person == "" ) 
+    (text = "User cancelled the prompt.") 
+    else (text = "Welcome " + person + "!");
+    document.getElementById("loginmessage").innerHTML = text;
+}
