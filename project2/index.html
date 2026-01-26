@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen</title>
+    <link rel="stylesheet" href="opdracht1.css">
+    <script src="opdracht1.js" defer></script>
+</head>
+<body>
+    <header>
+            <nav>
+                <img src="" alt="" id="logo">
+                <h1 class="hoofd">bank en cripto website</h1>
+                    <ul>
+                        <li><a href="home.html">homepage</a>
+                        <li><a href="home copy.html">rekeningen</a>
+                        <li><a href="home copy 2.html">cripto</a>
+                        <li><a href="index.html">login</a>
+                    </ul>
+                </nav>
+
+    </header>
+    <div class="login-container">
+        <h1>Inloggen</h1>
+        <form id="login-form">
+            <label for="username">Gebruikersnaam:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" required>
+            
+            <button type="button" onclick="login()">Inloggen</button>
+        </form>
+        <div id="notification"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
