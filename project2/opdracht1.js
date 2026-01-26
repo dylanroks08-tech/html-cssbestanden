@@ -24,3 +24,4 @@ function showLogin() {
     else (text = "Welcome " + person + "!");
     document.getElementById("loginmessage").innerHTML = text;
 }
+

@@ -21,7 +21,61 @@
             </nav>
     </header>
     <main>
+ <div class="dashboard-grid">
+            <!-- Saldo Card -->
+            <div class="card">
+                <h2>💰 Rekening Saldo</h2>
+                <div class="balance">€ 2.450,75</div>
+                <div class="info-row">
+                    <span class="label">Rekeningnummer:</span>
+                    <span class="value">NL91 BANK 0417 1643 00</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Type rekening:</span>
+                    <span class="value">Betaalrekening</span>
+                </div>
+                <button class="btn">Geld overmaken</button>
+            </div>
 
+            <!-- Spaarrekening Card -->
+            <div class="card">
+                <h2>🏦 Spaarrekening</h2>
+                <div class="balance">€ 8.750,00</div>
+                <div class="info-row">
+                    <span class="label">Rente:</span>
+                    <span class="value">2.5% per jaar</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Opgebouwde rente:</span>
+                    <span class="value">€ 218,75</span>
+                </div>
+                <button class="btn">Geld storten</button>
+            </div>
+
+            <!-- Recente transacties Card -->
+            <div class="card">
+                <h2>📋 Recente Transacties</h2>
+                <ul class="transactions">
+                    <li>
+                        <span>Albert Heijn</span>
+                        <span class="transaction-amount negative">- € 45,20</span>
+                    </li>
+                    <li>
+                        <span>Salaris</span>
+                        <span class="transaction-amount positive">+ € 2.500,00</span>
+                    </li>
+                    <li>
+                        <span>Netflix</span>
+                        <span class="transaction-amount negative">- € 13,99</span>
+                    </li>
+                    <li>
+                        <span>Ziggo</span>
+                        <span class="transaction-amount negative">- € 54,95</span>
+                    </li>
+                </ul>
+                <button class="btn">Alle transacties</button>
+            </div>
+        </div>
     </main>
 
      <button onclick="showCookieWall()">open cookiewall</button>
