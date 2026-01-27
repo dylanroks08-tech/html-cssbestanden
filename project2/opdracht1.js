@@ -103,3 +103,91 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+function initializeCryptoApp(){
+let balance = 1000;}
+
+const prices = {
+  btc: 90000,
+  eth: 4800,
+  ltc: 250
+};
+
+const portfolio = {
+  btc: 0,
+  eth: 0,
+  ltc: 0
+};
+
+function updatePrices() {
+  Object.keys(prices).forEach(coin => {
+    const oldPrice = prices[coin];
+
+    prices[coin] += (Math.random() - 0.5) * prices[coin] * 0.01;
+
+    const el = document.getElementById(coin);
+   el.textContent =  + prices[coin].toFixed(2);
+    el.className = prices[coin] > oldPrice ? "up" : "down";
+  });
+}
+
+setInterval(updatePrices, 3000);
+
+function updateBalance() {
+  document.getElementById("balance").textContent =
+    `Saldo: €${balance.toFixed(2)}`;
+}
+
+function buy() {
+  const coin = document.getElementById("coin").value;
+  const amount = Number(document.getElementById("amount").value);
+
+  if (amount <= 0 || amount > balance) {
+    alert("Niet genoeg saldo");
+    return;
+  }
+
+  balance -= amount;
+  portfolio[coin] += amount / prices[coin];
+
+  updateBalance();
+  renderPortfolio();
+}
+
+function sell() {
+  const coin = document.getElementById("coin").value;
+
+  if (portfolio[coin] <= 0) {
+    alert("U heeft Geen coins om te verkopen");
+    return;
+  }
+
+  balance += portfolio[coin] * prices[coin];
+  portfolio[coin] = 0;
+
+  updateBalance();
+  renderPortfolio();
+}
+
+function renderPortfolio() {
+  let ul = document.getElementById("portfolio");
+  ul.innerHTML = "";
+
+  for (let coin in portfolio) {
+    if (portfolio[coin] > 0) {
+      let li = document.createElement("li");
+
+      let amount = portfolio[coin];
+      let value = amount * prices[coin];
+
+      li.textContent =
+        coin.toUpperCase() +
+        ": " +
+        amount.toFixed(4) +
+        " stuks (€" +
+        value.toFixed(2) +
+        ")";
+
+      ul.appendChild(li);
+    }
+  }
+}
