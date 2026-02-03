@@ -191,3 +191,32 @@ function renderPortfolio() {
     }
   }
 }
+
+async function fetchBitcoinPrice() {
+    try {
+        const response = await fetch(
+            "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur"
+        );
+
+        if (!response.ok) {
+            throw new Error("Fout bij ophalen van data");
+        }
+
+        const data = await response.json();
+        const price = data.bitcoin.eur;
+
+        document.getElementById("price").textContent = `€ ${price.toLocaleString()}`;
+    } catch (error) {
+        document.getElementById("price").textContent = "Fout bij laden";
+        console.error(error);
+    }
+}
+
+// Event listener voor handmatig vernieuwen
+document.getElementById("refresh").addEventListener("click", fetchBitcoinPrice);
+
+// Automatisch laden bij opstart
+fetchBitcoinPrice();
+
+// Optioneel: elke 60 seconden automatisch vernieuwen
+setInterval(fetchBitcoinPrice, 60000);
