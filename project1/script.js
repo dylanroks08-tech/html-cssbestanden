@@ -6,7 +6,7 @@ function showCookieWall() {
 function checkage() {
     let age = document.getElementById('ageinput').value;
     if (age >= 16) {
-        window.location.href="home.html";
+        window.location.href="homepage.html";
     } else {
         document.getElementById('cookiewall').style.display = 'none';
         document.getElementById(`overlay`).style.display = 'none';
