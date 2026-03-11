@@ -181,3 +181,18 @@ function checkage() {
         localStorage.removeItem("score");
         localStorage.removeItem("highscore");
     }
+    
+    function game() {
+        var Canvas = document.getElementById("gamCanvas");
+        var ctx = Canvas.getContext("2d");
+        var score = getScore();
+        ctx.clearRect(0, 0, Canvas.width, Canvas.height);
+        myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+        ctx.fillText("Score: " + score, 10, 30);
+        var highscore = localStorage.getItem("highscore");
+        if (highscore !== null) {
+            ctx.fillText("High Score: " + highscore, 10, 60);
+        }
+    }
+
+    
