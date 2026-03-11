@@ -35,7 +35,7 @@ main {
 }
 
 footer {
-    background-color: rgb(0, 97, 2);
+    background-color: rgb(0, 143, 2);
 }
 
  #logo {
@@ -98,4 +98,11 @@ table, th, td {
 #youtube-link, #tiktok-link {
     color: black;
     text-decoration: none;
+}
+
+#tr16 {
+    background-color: rgb(254, 255, 255);
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
 }
