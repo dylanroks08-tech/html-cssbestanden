@@ -7,14 +7,36 @@
 
   <style>
     canvas {
-    border:1px solid #d3d3d3;
+    border:1px solid #03b900;
     background-color: #f1f1f1;}
+    nav ul li{
+    margin: 10px;
+    list-style: none;/* remove bullet points */
+    color: black;
+}
+
+nav ul li a{
+    text-decoration: none; /* remove underline */
+    color: black;
+}
+body {
+    background-color: #007c1b;
+}
   </style>
 </head>
 <body onload="startGame()">
     <script src="script.js"></script>
      <br>
      <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+     <button onmousedown="resetGame()">RESET</button>
+     <button onmousedown="pauseGame()">PAUSE</button>
+     <button onmousedown="resumeGame()">RESUME</button>
+     <button onmousedown="scoreboard()">SCOREBOARD</button>
+     <br>
+     scoreboard: <canvas id="gameCanvas" width="480" height="270">(scoreboard is nog niet werkend)</canvas>
+        <br>
+        
+
             <nav>
                 <ul>
                     <li><a href="homepage.html">homepage</a>

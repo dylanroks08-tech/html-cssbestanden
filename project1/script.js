@@ -126,3 +126,58 @@ function checkage() {
 
      function accelerate(n) {
      myGamePiece.gravity = n;}
+
+     function clearmove() {
+        myGamePiece.gravity = 0
+        }
+    
+    function resetGame() {
+        myGamePiece.gravity = 0;
+        myGameArea.frameNo = 0;
+        myObstacles = [];
+    }
+
+    function pauseGame() {
+        clearInterval(myGameArea.interval);
+    }
+
+    function resumeGame() {
+        myGameArea.interval = setInterval(updateGameArea, 20);
+    }
+
+    function scoreboard(setitem = true) {
+        var score = myGameArea.frameNo;
+        localStorage.setItem("score", score);
+        var highscore = localStorage.getItem("highscore");
+        if (highscore === null || score > highscore) {
+            localStorage.setItem("highscore", score);
+        }
+    }
+    
+    function showScoreboard() {
+        var highscore = localStorage.getItem("highscore");
+        if (highscore !== null) {
+            alert("High Score: " + highscore);
+        } else {
+            alert("No high score yet!");
+        }
+    }
+    
+    function addScore(score) {
+        var currentScore = localStorage.getItem("score");
+        if (currentScore === null) {
+            localStorage.setItem("score", score);
+        } else {
+            localStorage.setItem("score", parseInt(currentScore) + score);
+        }
+    }
+
+    function getScore() {
+        var score = localStorage.getItem("score");
+        return score !== null ? parseInt(score) : 0;
+    }
+
+    function resetScore() {
+        localStorage.removeItem("score");
+        localStorage.removeItem("highscore");
+    }
