@@ -40,7 +40,8 @@ footer {
 
  #logo {
     padding-top: 1.5vh;
-    height: 5vh;
+    height: 10vh;
+    width: auto;
 }
 
 table, th, td {
