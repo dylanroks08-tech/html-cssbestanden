@@ -19,9 +19,9 @@ function checkage() {
      var myScore;
 
      function startGame() {
-     myGamePiece = new component(30, 30, "red", 10, 120);
+     myGamePiece = new component(30, 30, "red" , 10, 120,);
      myGamePiece.gravity = 0.05;
-     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+     myScore = new component("30px", "Consolas", "black", 28, 40, "text");
      myGameArea.start();}
 
      var myGameArea = {
@@ -147,7 +147,7 @@ function checkage() {
  var highscore = 0;
     function scoreboard(setitem = true) {
         if (!setitem) return;
-        alert("de waarde van score is: " + myGameArea.frameNo);
+        alert("de score is: " + myGameArea.frameNo);
         var score = myGameArea.frameNo;
         //localStorage.setItem("score", score);
         //var highscore = localStorage.getItem("highscore");
@@ -156,5 +156,29 @@ function checkage() {
             //localStorage.setItem("highscore", score);
             highscore = score;
             alert("New high score!"+ highscore);
+        } else {
+            alert("Your score: " + score + "\nHigh score: " + highscore);
+        }
+    }
+    
+
+    function highscoreboard() {
+        //var highscore = localStorage.getItem("highscore");
+        if (highscore === null) {
+            alert("No high score yet!");
+        } else {
+            alert("Current high score: " + highscore);
+        }
+    }
+
+    var isDarkMode = false;
+    function toggleDarkMode() {
+        isDarkMode = !isDarkMode;
+        if (isDarkMode) {
+            document.body.style.backgroundColor = "#000000";
+            document.body.style.color = "rgb(0, 97, 2)";
+        } else {
+            document.body.style.backgroundColor = "rgb(0, 97, 2)";
+            document.body.style.color = "#000";
         }
     }
