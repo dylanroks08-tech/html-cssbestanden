@@ -144,55 +144,17 @@ function checkage() {
     function resumeGame() {
         myGameArea.interval = setInterval(updateGameArea, 20);
     }
-
+ var highscore = 0;
     function scoreboard(setitem = true) {
+        if (!setitem) return;
+        alert("de waarde van score is: " + myGameArea.frameNo);
         var score = myGameArea.frameNo;
-        localStorage.setItem("score", score);
-        var highscore = localStorage.getItem("highscore");
+        //localStorage.setItem("score", score);
+        //var highscore = localStorage.getItem("highscore");
+        
         if (highscore === null || score > highscore) {
-            localStorage.setItem("highscore", score);
+            //localStorage.setItem("highscore", score);
+            highscore = score;
+            alert("New high score!"+ highscore);
         }
     }
-    
-    function showScoreboard() {
-        var highscore = localStorage.getItem("highscore");
-        if (highscore !== null) {
-            alert("High Score: " + highscore);
-        } else {
-            alert("No high score yet!");
-        }
-    }
-    
-    function addScore(score) {
-        var currentScore = localStorage.getItem("score");
-        if (currentScore === null) {
-            localStorage.setItem("score", score);
-        } else {
-            localStorage.setItem("score", parseInt(currentScore) + score);
-        }
-    }
-
-    function getScore() {
-        var score = localStorage.getItem("score");
-        return score !== null ? parseInt(score) : 0;
-    }
-
-    function resetScore() {
-        localStorage.removeItem("score");
-        localStorage.removeItem("highscore");
-    }
-    
-    function game() {
-        var Canvas = document.getElementById("gamCanvas");
-        var ctx = Canvas.getContext("2d");
-        var score = getScore();
-        ctx.clearRect(0, 0, Canvas.width, Canvas.height);
-        myScore = new component("30px", "Consolas", "black", 280, 40, "text");
-        ctx.fillText("Score: " + score, 10, 30);
-        var highscore = localStorage.getItem("highscore");
-        if (highscore !== null) {
-            ctx.fillText("High Score: " + highscore, 10, 60);
-        }
-    }
-
-    
