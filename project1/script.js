@@ -11,15 +11,15 @@ function checkage() {
         document.getElementById('cookiewall').style.display = 'none';
         document.getElementById(`overlay`).style.display = 'none';
         document.getElementById('redpage').style.display = 'block';
-    }
-}
+    }}
 
-     var myGamePiece;
+    var myGamePiece;
      var myObstacles = [];
      var myScore;
 
      function startGame() {
-     myGamePiece = new component(30, 30, "red" , 10, 120,);
+    
+     myGamePiece= image = new component(30, 30, "red", 10, 120, "project1/brand-symbol-yellow-tshirt-rectangle.png");
      myGamePiece.gravity = 0.05;
      myScore = new component("30px", "Consolas", "black", 28, 40, "text");
      myGameArea.start();}
@@ -37,6 +37,7 @@ function checkage() {
      clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
      }
+     
      }
 
      function component(width, height, color, x, y, type) {
@@ -66,7 +67,15 @@ function checkage() {
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
         this.hitBottom();
+        this.hittop();
      }
+     this.hittop = function() {
+        var rocktop = 0;
+        if (this.y < rocktop) {
+            this.y = rocktop;
+            this.gravitySpeed = 0;
+        }
+    }
      this.hitBottom = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
         if (this.y > rockbottom) {
@@ -128,11 +137,11 @@ function checkage() {
      myGamePiece.gravity = n;}
 
      function clearmove() {
-        myGamePiece.gravity = 0
+        myGamePiece.gravity = 0.05;
         }
     
-    function resetGame() {
-        myGamePiece.gravity = 0;
+    function resetGame() { 
+        myGamePiece.gravity = 0.05;
         myGameArea.frameNo = 0;
         myObstacles = [];
     }
@@ -159,8 +168,7 @@ function checkage() {
         } else {
             alert("Your score: " + score + "\nHigh score: " + highscore);
         }
-    }
-    
+        }
 
     function highscoreboard() {
         //var highscore = localStorage.getItem("highscore");
@@ -168,8 +176,7 @@ function checkage() {
             alert("No high score yet!");
         } else {
             alert("Current high score: " + highscore);
-        }
-    }
+        }}
 
     var isDarkMode = false;
     function toggleDarkMode() {
@@ -181,4 +188,17 @@ function checkage() {
             document.body.style.backgroundColor = "rgb(0, 97, 2)";
             document.body.style.color = "#000";
         }
+    }
+
+
+     var rememberScore = 0;
+    rememberScore = function() {
+        localStorage.setItem("score", myGameArea.frameNo);
+        alert("Score saved: " + myGameArea.frameNo);
+    }
+
+    resetscoreboard = function() {
+        highscore = 0;
+        localStorage.removeItem("highscore");
+        alert("High score reset!");
     }
