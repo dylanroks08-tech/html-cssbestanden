@@ -85,4 +85,11 @@ nav ul {
 nav ul li {
     margin: 0 15px;
     text-decoration: none;
+    color: #00ffff;
+}
+nav ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    transition: color 0.2s;
 }
