@@ -112,3 +112,11 @@ table, th, td {
     color: black;
     text-decoration: none;
 }
+
+#cosplay-foto {
+        position: absolute; /* Haalt de afbeelding uit de normale tekststroom */
+        top: 200px;          /* Afstand vanaf de bovenkant */
+        right: 200px;        /* Afstand vanaf de rechterkant */
+        width: 150px;       /* Breedte van de afbeelding */
+        height: auto;       /* Hoogte automatisch */
+    }
