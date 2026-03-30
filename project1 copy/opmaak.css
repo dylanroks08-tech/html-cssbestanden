@@ -1,0 +1,130 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(0, 97, 2);
+}
+
+nav ul{
+    background-color: rgb(1, 121, 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 10px;
+    list-style: none;/* remove bullet points */
+    color: black;
+}
+
+main {
+    background-color: rgb(0, 97, 2);
+    flex: 1; /* grow to fill available space */
+}
+
+footer {
+    background-color: rgb(0, 143, 2);
+}
+
+ #logo {
+    padding-top: 1.5vh;
+    height: 10vh;
+    width: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+#tr10{
+    background-color: red;
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+#tr11{
+    background-color: rgb(21, 226, 6);
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#cookiewall{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(0, 150, 35);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 82, 0, 0.434);
+}
+
+.redpage{
+    display: none;
+    text-align: center;
+   color: rgb(0, 0, 0);
+    background-color: red;
+    padding: 20px;
+}
+
+#youtube-link, #tiktok-link {
+    color: black;
+    text-decoration: none;
+}
+
+#tr16 {
+    background-color: rgb(254, 255, 255);
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
+
+#email-link {
+    color: black;
+    text-decoration: none;
+}
+
+#cosplay-foto {
+        position: absolute; /* Haalt de afbeelding uit de normale tekststroom */
+        top: 200px;          /* Afstand vanaf de bovenkant */
+        right: 200px;        /* Afstand vanaf de rechterkant */
+        width: 150px;       /* Breedte van de afbeelding */
+        height: auto;       /* Hoogte automatisch */
+    }
+
+    #bots {
+        position: absolute; /* Haalt de afbeelding uit de normale tekststroom */
+        top: 200px;          /* Afstand vanaf de bovenkant */
+        right: 200px;        /* Afstand vanaf de rechterkant */
+        width: 600px;       /* Breedte van de afbeelding */
+        height: auto;       /* Hoogte automatisch */
+    }

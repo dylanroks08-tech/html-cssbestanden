@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-          <h1>games en het coderen van games</h1>
+            <h1>games en het coderen van games</h1>
             <nav>
                 <ul>
                     <li><a href="homepage.html"><img src="monsterimage.png" alt="" id="logo"></a>
                     <li><a href="about.html">about</a>
                     <li><a href="gameganres.html">game genres</a>
                     <li><a href="projecten.html">projecten</a>
-                    <li><details>
+                        <li><details>
                     <sumary><li><a href="mini-game.html">mini game</a></li>
                     <li><a href="test.html">mini game 2</a></li></sumary>
                             </details></li>
@@ -25,42 +25,43 @@
             </nav>    
     </header>
     <main>
-        <h2>projecten</h2>
-         <p>
-            hier kunt u mijn projecten vinden die ik heb gemaakt voor school
+        <h2>welkom op mijn website</h2>
+        <p>
+            hier kunt u informatie vinden over mij, mijn hobby's en mijn projecten
             <br>
-            ik heb verschillende projecten gemaakt voor verschillende vakken
+            ik ben dylan max roks en ik ben 17 jaar oud
             <br>
-            ik zal hier een paar van mijn projecten laten zien
+            ik heb veel hobby's zoals gamen, modelbouw en muziek maken
             <br>
-            project 1: een website maken over je portfolio en hobby's
-            <br>
-            dit is een project dat ik heb gemaakt voor het vak webdisign
-            <br>
-            ik heb deze website gemaakt met html en css
-            <br>
-            project 2: een game design maken in unity
-            <br>
-            ik heb dit game design gemaakt met unity
-            <br>
-            project 3: een presentatie maken over mijn hobby's
-            <br>
-            ik heb deze presentatie gemaakt met powerpoint
+            ik heb ook verschillende projecten gemaakt voor school die u hier kunt vinden
         </p>
     </main>
+
+    <button onclick="showCookieWall()">open cookiewall</button>
+    <div id="overlay"></div>
+    <div id="cookiewall">
+     <p>geef je leeftijd</p>
+     <input type="number" id="ageinput" placeholder="leeftijd">
+     <h1 onclick="checkage()">verifieren</h1>
+    </div>
+    <div class="redpage" id="redpage">
+     <p>helaas, je bent hier te jong voor</p>
+    </div>
+    <script src="script.js"></script>
+
     <footer>
-        <p>
+       <p>
             contact dylan roks 
             <br>
              E-mail: <a href="mailto:dylanroks08@gmail.com" id="email-link">dylanroks08@gmail.com</a>
             <br>
-             telefoon:+31 6 22597669
+             telefoon: +31 6 22597669
             <br>
-            adres: weelstraat 4 4307BR oosterland zeeland schouwen-duiveland
-             <br>
-            youtube: <a href="https://www.youtube.com/@bravo-dutch" id="youtube-link">bravo-dutch </a>
+             adres: weelstraat 4 4307BR oosterland zeeland schouwen-duiveland
             <br>
-            tiktok: <a href="https://www.tiktok.com/@bravo_dutch_5?is_from_webapp=1&sender_device=pc" id="tiktok-link">callsign-bravodutch</a>
+             youtube: <a href="https://www.youtube.com/@bravo-dutch" id="youtube-link">bravo-dutch </a>
+            <br>
+             tiktok: <a href="https://www.tiktok.com/@bravo_dutch_5?is_from_webapp=1&sender_device=pc" id="tiktok-link">callsign-bravodutch</a>
         </p>
     </footer>
 </body>

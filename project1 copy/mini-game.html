@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    canvas {
+    border:1px solid #03b900;
+    background-image: url("flapy.png");
+    display: flex;
+    margin: 0 auto;
+    border-top: 1px solid #03b900;
+    }
+    
+    #mygamepiece{
+    image-rendering: pixelated;
+    /*image: url("flapy.png");*/
+    }
+    nav ul li{
+    margin: 10px;
+    list-style: none;/* remove bullet points */
+    color: black;
+}
+
+nav ul li a{
+    text-decoration: none; /* remove underline */
+    color: black;
+}
+body {
+    background-color: #007c1b;
+}
+
+#gamebar {
+    background-color: #03b900;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+}
+  </style>
+</head>
+<body onload="startGame()">
+    <script src="script.js"></script>
+     <br>
+     <button id="gamebar" onmousedown="toggleDarkMode()">TOGGLE DARK MODE</button>
+     <button id="gamebar" onmousedown="highscoreboard()">HIGHSCOREBOARD</button>
+     <button id="gamebar" onmousedown="scoreboard()">SCOREBOARD</button> 
+     <button id="gamebar" onmousedown="pauseGame()">PAUSE</button>
+     <button id="gamebar" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+     <button id="gamebar" onmousedown="resumeGame()">RESUME</button>
+     <button id="gamebar" onmousedown="resetGame()">RESET</button>
+     <button id="gamebar" onmousedown="resetscoreboard()">RESET HIGHSCORE</button>
+        <br>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">homepage</a>
+                </ul>
+            </nav> 
+</body>
+</html>
