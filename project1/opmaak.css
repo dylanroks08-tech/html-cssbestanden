@@ -41,6 +41,7 @@ main {
 
 footer {
     background-color: rgb(0, 143, 2);
+    text-align: center;
 }
 
  #logo {
@@ -101,7 +102,7 @@ table, th, td {
     padding: 20px;
 }
 
-#youtube-link, #tiktok-link {
+#youtube-link, #tiktok-link, #spotify-link {
     color: black;
     text-decoration: none;
 }
