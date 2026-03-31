@@ -23,9 +23,14 @@ nav ul{
     justify-content: space-around;
 }
 
-nav ul li{
-    margin: 10px;
+nav ul li {
+    margin: 0 15px;
     list-style: none;/* remove bullet points */
+    color: #000000;
+}
+
+nav ul li a{
+    text-decoration: none; /* remove underline */
     color: black;
 }
 
