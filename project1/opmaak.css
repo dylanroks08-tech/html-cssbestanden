@@ -129,8 +129,8 @@ table, th, td {
 
     #bots {
         position: absolute; /* Haalt de afbeelding uit de normale tekststroom */
-        top: 200px;          /* Afstand vanaf de bovenkant */
-        right: 200px;        /* Afstand vanaf de rechterkant */
-        width: 600px;       /* Breedte van de afbeelding */
+        top: 310px;          /* Afstand vanaf de bovenkant */
+        right: 10px;        /* Afstand vanaf de rechterkant */
+        width: 450px;       /* Breedte van de afbeelding */
         height: auto;       /* Hoogte automatisch */
     }
