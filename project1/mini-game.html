@@ -42,6 +42,20 @@ body {
     font-size: 16px;
     justify-content: center;
 }
+#scoreboard {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+#scoreboard th, #scoreboard td {
+    border: 1px solid #03b900;
+    padding: 10px;
+    text-align: center;
+}
+#player-name, #current-score, #high-score {
+    font-size: 18px;
+    font-weight: bold;
+}
   </style>
 </head>
 <body onload="startGame()">
@@ -60,6 +74,33 @@ body {
                 <ul>
                     <li><a href="homepage.html">homepage</a>
                 </ul>
-            </nav> 
+            </nav>
+        <table id="scoreboard">
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+                <th>High Score</th>
+            </tr>
+            <tr>
+                <td id="player-name">dylan</td>
+                <td id="current-score">9439</td>
+                <td id="high-score">9439</td>
+            </tr>
+            <tr>
+                <td id="player-name">player 2</td>
+                <td id="current-score">0</td>
+                <td id="high-score">0</td>
+            </tr>
+            <tr>
+                <td id="player-name">player 3</td>
+                <td id="current-score">0</td>
+                <td id="high-score">0</td>
+            </tr>
+            <tr>
+                <td id="player-name">player 4</td>
+                <td id="current-score">0</td>
+                <td id="high-score">0</td>
+            </tr>
+        </table> 
 </body>
 </html>

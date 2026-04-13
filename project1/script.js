@@ -202,3 +202,13 @@ function checkage() {
         localStorage.removeItem("highscore");
         alert("High score reset!");
     }
+
+    highscoreboard = function() {
+        var storedHighScore = localStorage.getItem("highscore");
+        if (storedHighScore === null) {
+            alert("No high score yet!");
+        } else {
+            alert("Current high score: " + storedHighScore);
+        }   
+        }
+
