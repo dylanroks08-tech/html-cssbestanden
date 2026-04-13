@@ -134,3 +134,10 @@ table, th, td {
         width: 450px;       /* Breedte van de afbeelding */
         height: auto;       /* Hoogte automatisch */
     }
+    #cijfers {
+        position: absolute; /* Haalt de afbeelding uit de normale tekststroom */
+        top: 350px;          /* Afstand vanaf de bovenkant */
+        left: 10px;        /* Afstand vanaf de rechterkant */
+        width: 350px;       /* Breedte van de afbeelding */
+        height: auto;       /* Hoogte automatisch */
+    }
