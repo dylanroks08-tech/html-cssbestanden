@@ -45,9 +45,20 @@ nav ul li a{
 }
 #shop {
     position: absolute;
-    top: 300px;
-    left: 500px;
+    top: 170px;
+    left: 300px;
     background-color: #5a5a5a;
     width: 300px;
     height: 50px;
+}
+p{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 750px;
+    background-color: #5a5a5a;
 }
