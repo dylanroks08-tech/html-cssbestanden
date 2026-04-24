@@ -43,3 +43,11 @@ nav ul li a{
     width: 100px;
     height: 50px;
 }
+#shop {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    background-color: #5a5a5a;
+    width: 300px;
+    height: 50px;
+}
