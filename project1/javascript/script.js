@@ -6,7 +6,7 @@ function showCookieWall() {
 function checkage() {
     let age = document.getElementById('ageinput').value;
     if (age >= 16) {
-        window.location.href="homepage.html";
+        window.location.href="../html/homepage.html";
     } else {
         document.getElementById('cookiewall').style.display = 'none';
         document.getElementById(`overlay`).style.display = 'none';
@@ -19,7 +19,7 @@ function checkage() {
 
      function startGame() {
     
-     myGamePiece= image = new component(30, 30, "red", 10, 120, "project1/brand-symbol-yellow-tshirt-rectangle.png");
+     myGamePiece= image = new component(30, 30, "red", 10, 120, "../images/brand-symbol-yellow-tshirt-rectangle.png");
      myGamePiece.gravity = 0.05;
      myScore = new component("30px", "Consolas", "black", 28, 40, "text");
      myGameArea.start();}
