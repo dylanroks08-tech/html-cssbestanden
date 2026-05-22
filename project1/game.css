@@ -24,6 +24,34 @@ nav ul li a{
     padding-top: 1.5vh;
     height: 20vh;
     width: auto;
+    display: none;
+    z-index: 5;
+    position: absolute;
+}
+#gamelogo2 {
+    padding-top: 1.5vh;
+    height: 20vh;
+    width: auto;
+    display: none;
+    z-index: 4;
+    position: absolute;
+}
+
+#gamelogo3 {
+    padding-top: 1.5vh;
+    height: 20vh;
+    width: auto;
+    display: none;
+    z-index: 3;
+    position: absolute;
+}
+#gamelogo4 {
+    padding-top: 1.5vh;
+    height: 20vh;
+    width: auto;
+    display: none;
+    z-index: 2;
+    position: absolute;
 }
 #background-image {
     position: absolute;
