@@ -220,3 +220,4 @@ fetchBitcoinPrice();
 
 // Optioneel: elke 60 seconden automatisch vernieuwen
 setInterval(fetchBitcoinPrice, 60000);
+
