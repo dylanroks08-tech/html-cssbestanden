@@ -18,6 +18,47 @@
     width: 8vh;
     height: auto; 
     z-index: 2;
+    display: flex;
+}
+#peanut2{
+    position: absolute;
+    top: 45vh;
+    left: 110vh;
+    transform: translate(-50%, -50%);
+    width: 16vh;
+    height: auto; 
+    z-index: 2;
+    display: flex;
+}
+#peanut3{
+    position: absolute;
+    top: 50vh;
+    left: 110vh;
+    transform: translate(-50%, -50%);
+    width: 30vh;
+    height: auto; 
+    z-index: 2;
+    display: flex;
+}
+#peanut4{
+    position: absolute;
+    top: 60vh;
+    left: 110vh;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: auto; 
+    z-index: 2;
+    display: flex;
+}
+#peanut5{
+    position: absolute;
+    top: 87vh;
+    left: 108vh;
+    transform: translate(-50%, -50%);
+    width: 190vh;
+    height: auto; 
+    z-index: 2;
+    display: flex;
 }
 #door{
     position: absolute;
@@ -26,7 +67,7 @@
     transform: translate(-50%, -50%);
     width: 7.5vh;
     height: auto; 
-    z-index: 4;
+    z-index: 3;
 }
 #opendoor{
     position: absolute;
@@ -35,7 +76,7 @@
     transform: translate(-50%, -50%);
     width: 7.5vh;
     height: auto; 
-    z-index: 3;
+    z-index: 2;
 }
 #achter{
     position: absolute;
@@ -68,4 +109,10 @@
     top: 0;
     left: 0;
     z-index: 8;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+    overflow: hidden;
 }
