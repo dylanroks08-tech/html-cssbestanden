@@ -64,6 +64,16 @@
     display: flex;
     display: none;
 }
+#peanut6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio and cover the entire area */
+    z-index: -1; /* place it behind other content */
+    display: none;
+}
 #door{
     position: absolute;
     top: 36vh;
@@ -105,14 +115,30 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 7;
+    z-index: 8;
+    display: block;
 }
 
 #sound2{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 8;
+    z-index: 8 ;
+    display: block;
+}
+#sound3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+}
+#sound4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
 }
 #scp-text{
     position: absolute;
