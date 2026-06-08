@@ -1,14 +1,10 @@
 
 window.onload = function startgame()
 {
-  setTimeout(myFunction, 5000);
-    function myFunction() {
-        document.getElementById("sound2").style.display = "none";
     setTimeout(myFunction, 36000);
     function myFunction() {
         document.getElementById("change").style.display = "none";
         document.getElementById("achter").style.display = "none";
-        document.getElementById("sound").style.display = "none";
     setTimeout (myFunction, 15000) 
     function myFunction() {
         document.getElementById("scp173").style.display = "none";
@@ -16,9 +12,6 @@ window.onload = function startgame()
     setTimeout (myFunction, 60000) 
     function myFunction() {
         document.getElementById("door").style.display = "none";
-    setTimeout (myFunction, 3000)
-    function myFunction() {
-        document.getElementById("sound3").style.display = "none";
     setTimeout (myFunction, 24000) 
     function myFunction() {
         document.getElementById("peanut").style.display = "block";
@@ -55,7 +48,6 @@ window.onload = function startgame()
 }
 }
 }
-}  
-}
+
 
 

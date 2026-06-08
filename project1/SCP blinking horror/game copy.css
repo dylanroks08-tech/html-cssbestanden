@@ -127,13 +127,6 @@
     z-index: 8 ;
     display: block;
 }
-#sound3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    display: block;
-}
 #sound4{
     position: absolute;
     top: 0;
