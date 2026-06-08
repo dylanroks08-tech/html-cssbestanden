@@ -40,10 +40,3 @@ window.onload = function randoo() {
     console.log;
 
 }
-
-{
-    setTimeout(myFunction, 10000);
-    function myFunction() {
-        document.getElementById("change2").style.display = "none";
-        document.getElementById("achter2").style.display = "none";}
-    }
