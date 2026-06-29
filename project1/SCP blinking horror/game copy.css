@@ -163,6 +163,31 @@
     top: 20vh;
     display: none;
 }
+#time{
+    position: absolute;
+    top: 98vh;
+    left: center;
+    transform: translate(-50%, -50%);
+    width: 5000vh;
+    height: 4vw; 
+    z-index: 10;
+    display: flex;
+    display: none;
+    background-color: black;
+}
+#green{
+    position: absolute;
+    top: 98vh;
+    left: center;
+    transform: translate(-50%, -50%);
+    width: 100vh;
+    height: 4vw; 
+    z-index: 10;
+    display: flex;
+    display: none;
+    background-color: rgb(94, 255, 0);
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
