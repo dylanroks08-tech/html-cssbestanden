@@ -1,5 +1,5 @@
-python -m venv env
-source env/bin/activate # On Windows: .\env\Scripts\activate
+File "C:\Users\dylan\OneDrive\Documents\codering\html-cssbestanden\Jarvis\jarvis.py", line 1
+source .\env\Scripts\activate # On Windows: .\env\Scripts\activate
 import pyttsx3
 engine = pyttsx3.init()
 engine.setProperty('rate', 190)
