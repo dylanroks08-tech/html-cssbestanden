@@ -20,9 +20,9 @@ window.addEventListener('load', function () { // wacht tot de pagina volledig is
 
     // Onderstaande array constante definieert de stappen met daarin de tijdsduur voordat de actie wordt uitgevoerd en daarna de acties zelf
   const steps = [
-    { delay: 36000, action: function () { hide('change'); hide('achter'); } },
-    { delay: 15000, action: function () { hide('scp173'); hide('scp-text'); } },
-    { delay: 60000, action: function () { hide('door'); show('time'); show('green'); } },
+    { delay: 3600, action: function () { hide('change'); hide('achter'); } },
+    { delay: 1500, action: function () { hide('scp173'); hide('scp-text'); } },
+    { delay: 6000, action: function () { hide('door'); show('time'); show('green'); } },
     
     
     { delay: 24000, action: function () { show('peanut'); } },

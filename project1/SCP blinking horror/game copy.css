@@ -25,7 +25,7 @@
     top: 45vh;
     left: 110vh;
     transform: translate(-50%, -50%);
-    width: 25vh;
+    width: 28vh;
     height: auto; 
     z-index: 2;
     display: flex;
@@ -36,7 +36,7 @@
     top: 50vh;
     left: 110vh;
     transform: translate(-50%, -50%);
-    width: 35vh;
+    width: 48vh;
     height: auto; 
     z-index: 2;
     display: flex;
@@ -47,7 +47,7 @@
     top: 60vh;
     left: 110vh;
     transform: translate(-50%, -50%);
-    width: 55vh;
+    width: 68vh;
     height: auto; 
     z-index: 2;
     display: flex;

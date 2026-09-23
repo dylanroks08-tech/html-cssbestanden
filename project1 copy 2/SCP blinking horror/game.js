@@ -23,16 +23,8 @@ window.addEventListener('load', function () { // wacht tot de pagina volledig is
     { delay: 36000, action: function () { hide('change'); hide('achter'); } },
     { delay: 15000, action: function () { hide('scp173'); hide('scp-text'); } },
     { delay: 60000, action: function () { hide('door'); show('time'); show('green'); } },
-    
-    
-    { delay: 24000, action: function () { show('peanut'); } },
-    { delay: 24000, action: function () { hide('peanut'); show('peanut2'); } },
-    { delay: 24000, action: function () { hide('peanut2'); show('peanut3'); } },
-    { delay: 24000, action: function () { hide('peanut3'); show('peanut4'); } },
-    { delay: 24000, action: function () { hide('peanut4'); show('peanut5'); } },
     { delay: 60000, action: function () {
         hide('opendoor');
-        hide('peanut5');
         hide('time'); 
         hide('green');
         show('peanut6');
@@ -57,4 +49,9 @@ setTimeout(function() {
     document.getElementById('timebutton').classList.add('green');
 })
 
+const scp173=document.getElementById('peanut');
+
+let scpwidth=8;
+
+scp173.style.width='${scpwidth}vw'
 

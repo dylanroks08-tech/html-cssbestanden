@@ -8,8 +8,6 @@
     z-index: -1; /* place it behind other content */
     display: flex;
 }
-
-
 #peanut{
     position: absolute;
     top: 36vh;
@@ -19,50 +17,6 @@
     height: auto; 
     z-index: 2;
     display: flex;
-}
-#peanut2{
-    position: absolute;
-    top: 45vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 25vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
-#peanut3{
-    position: absolute;
-    top: 50vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 35vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
-#peanut4{
-    position: absolute;
-    top: 60vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 55vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
-#peanut5{
-    position: absolute;
-    top: 87vh;
-    left: 108vh;
-    transform: translate(-50%, -50%);
-    width: 190vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
 }
 #peanut6{
     position: absolute;
