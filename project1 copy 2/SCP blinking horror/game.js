@@ -52,6 +52,13 @@ setTimeout(function() {
 const scp173=document.getElementById('peanut');
 
 let scpwidth=8;
+let scpheight=36;
 
-scp173.style.width='${scpwidth}vw'
+scp173.style.width='${scpwidth}vh'
 
+scp173.style.marginTop='${scpheight}vh'
+
+document.getElementById('timebutton').addEventListener('click', function() {
+  let scpwidth=scpwidth+20;  
+  scp173.style.width='${scpwidth}vh';
+});

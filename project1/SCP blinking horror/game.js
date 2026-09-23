@@ -25,12 +25,12 @@ window.addEventListener('load', function () { // wacht tot de pagina volledig is
     { delay: 6000, action: function () { hide('door'); show('time'); show('green'); } },
     
     
-    { delay: 24000, action: function () { show('peanut'); } },
-    { delay: 24000, action: function () { hide('peanut'); show('peanut2'); } },
-    { delay: 24000, action: function () { hide('peanut2'); show('peanut3'); } },
-    { delay: 24000, action: function () { hide('peanut3'); show('peanut4'); } },
-    { delay: 24000, action: function () { hide('peanut4'); show('peanut5'); } },
-    { delay: 60000, action: function () {
+    { delay: 2400, action: function () { show('peanut'); } },
+    { delay: 2400, action: function () { hide('peanut'); show('peanut2'); } },
+    { delay: 2400, action: function () { hide('peanut2'); show('peanut3'); } },
+    { delay: 2400, action: function () { hide('peanut3'); show('peanut4'); } },
+    { delay: 2400, action: function () { hide('peanut4'); show('peanut5'); } },
+    { delay: 6000, action: function () {
         hide('opendoor');
         hide('peanut5');
         hide('time'); 
