@@ -1,0 +1,11 @@
+document.getElementById('timebutton').classList.remove('green');
+document.getElementById('timebutton').classList.add('red');
+setTimeout(function() {
+    document.getElementById('timebutton').classList.remove('red');
+    document.getElementById('timebutton').classList.add('green');
+})
+document.getElementById('timebutton').addEventListener('click', function() {
+  scpwidth+=20;
+  scpheight+=7;   
+  updateEnemyPosition();
+});

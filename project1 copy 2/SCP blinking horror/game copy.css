@@ -17,6 +17,39 @@
     height: auto; 
     z-index: 2;
     display: flex;
+
+}
+
+#peanut5{
+    position: absolute;
+    top: 87vh;
+    left: 108vh;
+    transform: translate(-50%, -50%);
+    width: 190vh;
+    height: auto; 
+    z-index: 2;
+    display: flex;
+
+}
+#gamelogo4 {
+    padding-left: 155vh;
+    padding-top: 1.5vh;
+    height: 60vh;
+    width: auto;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+}
+#gamelogo4rare {
+    padding-left: 155vh;
+    padding-top: 1.5vh;
+    height: 60vh;
+    width: auto;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    display: flex;
 }
 #peanut6{
     position: absolute;
@@ -45,7 +78,7 @@
     width: 7.5vh;
     height: auto; 
     z-index: 2;
-    display: block;
+    display: none;
 }
 #achter{
     position: absolute;

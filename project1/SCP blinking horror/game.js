@@ -22,7 +22,7 @@ window.addEventListener('load', function () { // wacht tot de pagina volledig is
   const steps = [
     { delay: 3600, action: function () { hide('change'); hide('achter'); } },
     { delay: 1500, action: function () { hide('scp173'); hide('scp-text'); } },
-    { delay: 6000, action: function () { hide('door'); show('time'); show('green'); } },
+    { delay: 6000, action: function () { hide('door'); show('time'); show('timebutton'); } },
     
     
     { delay: 2400, action: function () { show('peanut'); } },
