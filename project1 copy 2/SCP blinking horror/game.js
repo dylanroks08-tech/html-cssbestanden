@@ -120,5 +120,16 @@ gameinterval = setInterval(() => {
       }
     },1000);
 
-
+timebutton.addEventListener('click', () => {
+  if (!gameStarted) return;
+  if (timebutton?.classList.contains('green')) {
+    timebutton?.classList.remove('green');
+    timebutton?.classList.add('red');
+    lastTimingEvent = Date.now();
+  } else {
+  scpwidth+=20;
+  scpheight+=7;
+  stage+=1 ;
+  updateEnemyPosition();}
+});
 });

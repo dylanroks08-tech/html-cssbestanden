@@ -8,8 +8,6 @@
     z-index: -1; /* place it behind other content */
     display: flex;
 }
-
-
 #peanut{
     position: absolute;
     top: 36vh;
@@ -19,40 +17,9 @@
     height: auto; 
     z-index: 2;
     display: flex;
+
 }
-#peanut2{
-    position: absolute;
-    top: 43vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 28vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
-#peanut3{
-    position: absolute;
-    top: 50vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 48vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
-#peanut4{
-    position: absolute;
-    top: 57vh;
-    left: 110vh;
-    transform: translate(-50%, -50%);
-    width: 68vh;
-    height: auto; 
-    z-index: 2;
-    display: flex;
-    display: none;
-}
+
 #peanut5{
     position: absolute;
     top: 87vh;
@@ -62,7 +29,27 @@
     height: auto; 
     z-index: 2;
     display: flex;
+
+}
+#gamelogo4 {
+    padding-left: 155vh;
+    padding-top: 1.5vh;
+    height: 60vh;
+    width: auto;
     display: none;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+}
+#gamelogo4rare {
+    padding-left: 155vh;
+    padding-top: 1.5vh;
+    height: 60vh;
+    width: auto;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    display: flex;
 }
 #peanut6{
     position: absolute;
@@ -91,7 +78,7 @@
     width: 7.5vh;
     height: auto; 
     z-index: 2;
-    display: block;
+    display: none;
 }
 #achter{
     position: absolute;
@@ -161,6 +148,7 @@
     height: 10vh;
     position: absolute;
     top: 20vh;
+    z-index: 20;
     display: none;
 }
 #time{
