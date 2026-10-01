@@ -1,17 +1,29 @@
 function showCookieWall() {
     document.getElementById('cookiewall').style.display = 'block';
-    document.getElementById(`overlay`).style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function hideCookieWall() {
+    document.getElementById('cookiewall').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
 }
 
 function checkage() {
-    let age = document.getElementById('ageinput').value;
-    if (age >= 16) {
-        window.location.href="../html/homepage.html";
-    } else {
-        document.getElementById('cookiewall').style.display = 'none';
-        document.getElementById(`overlay`).style.display = 'none';
-        document.getElementById('redpage').style.display = 'block';
-    }}
+    const age = Number(document.getElementById('ageinput').value);
+
+    if (!Number.isNaN(age) && age >= 16) {
+        localStorage.setItem('cookieWallAccepted', 'true');
+        hideCookieWall();
+        return;
+    }
+
+    hideCookieWall();
+    document.getElementById('redpage').style.display = 'block';
+}
+
+if (localStorage.getItem('cookieWallAccepted') === 'true') {
+    hideCookieWall();
+}
 
     var myGamePiece;
      var myObstacles = [];
